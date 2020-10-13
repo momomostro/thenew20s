@@ -1,0 +1,68 @@
+.header-sect {
+  margin-top: 60px;
+}
+
+.hero-sect {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+/* antes tenia 48vh en height */
+
+.hero-sect .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+}
+
+.hero-sect h1 {
+  color: #ffffff;
+  text-align: center;
+  max-width: 100%;
+  font-size: 6rem;
+  font-weight: 400;
+}
+
+.hero-sect p {
+  color: #fff;
+  text-align: center;
+  max-width: 100%;
+}
+
+/* Media queries para hero del home en mobile */
+
+@media (max-width: 991px) {
+  .hero-sect h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-sect h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-sect h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-sect h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-sect .lead {
+    font-size: 1.2rem;
+  }
+}
+
+/* Fin de media queries para hero del home en mobile */
+

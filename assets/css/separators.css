@@ -1,0 +1,26 @@
+.triangle {
+  position: relative;
+  background: #7c197f;
+  height: 50vh;
+  width: 100%;
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .triangle {
+    height: 60vh;
+  }
+}
+
+.triangle::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 65px 65px 0 65px;
+  border-color: #7c197f transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+}
+
